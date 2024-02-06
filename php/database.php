@@ -8,6 +8,9 @@ otherwise it gets an exception.
 
 */
 try{
+    // Connect to the database
+    // start the session
+    session_start();
     $db = new PDO('mysql:host=localhost;dbname=forum_freakit;charset=utf8;', 'root', '');
     //echo "<p style='color:green;text-align:left;font-weight:bold;'>Connected successfully.</p>";
    // header('Location: ./signup.php');

@@ -1,7 +1,6 @@
-<?php require('php/signupAction.php'); ?>
+<?php require('php/users/signupAction.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php // include 'include/head.php'; ?>
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,7 @@
    <br/><br/><br/><br/><br/>
     <div class="container">
         <h1>Sign UP</h1>
-        <form method="POST" action="php/signupAction.php">
+        <form method="POST">
 
             <?php 
                 if(isset($errorMsg)){
@@ -89,6 +88,7 @@
             </div>
                 <div class="form_input">
                     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                    <p> I already have an account <a href="login.php" style="color:dodgerblue;text-decoration:none;"> Login</a></p>
                 </div>
             <br/>
             <div class="row">
