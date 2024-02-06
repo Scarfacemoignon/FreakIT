@@ -1,85 +1,113 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: white ;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px red;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=date] {
+  width: calc(100% - 24px); /* Ajustez la largeur pour laisser de l'espace pour l'image */
+  padding: 12px;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  background-color: #273c75;
+  resize: vertical;
+  color: white;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  
+}
+
+.button {
+  background: #1da1f2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 50%;
+  margin-left: 35%;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.container-signup {
+  border-radius: 5px;
+  background-color: #273c75;
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-signup-left {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.container-signup-left img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.8);
+
+}
+
+.container-signup-right {
+  padding: 10px;
+  width: 50%;
+  float: left;
+  color: white;
+}
+
+.name_input,
+.form_input,
+.form_input p,
+.form_input button {
+  width: 100%;
+}
+.freakit{
+  width:50px;
+  height: 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name_input {
+  width: 20%;
+  margin-top: 6px;
+}
+
+.form_input {
+  width: 80%;
+  margin-top: 6px;
+}
+::placeholder{
+  color: #ccc;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .container-signup-left,
+  .container-signup-right {
+      width: 100%;
+      float: none;
   }
 
-  h1{
-    text-align: center;
-    color: #1928d2;
-    font-weight: bold;
-  }
-  
-  input[type=text],input[type=email],input[type=password],input[type=date]{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  .button{
-    background-color: #1928d2;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  .button:hover {
-    background-color: #5140c1;
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 50%;
-    margin-left: 25%;
-  }
-  
-  .name_input {
-    float: left;
-    width: 15%;
-    margin-top: 6px;
-  }
-  
-  .form_input {
-    float: left;
-    width: 85%;
-    margin-top: 6px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .name_input, .form_input, input[type=submit],input[type=text],input[type=email],input[type=password],input[type=date] {
-      width: 100%;
-      margin-top: 0;
-    }
-    .container {
-        width: 100%;
-        margin-left: 1%;
-      }
-  }
-  @media(max-width: 600px) and (max-width: 800px) {
-    .name_input, .form_input, input[type=submit],input[type=text],input[type=email],input[type=password],input[type=date] {
-      width: 100%;
-      margin-top: 0;
-    }
-    .container {
-        width: 100%;
-        margin-left: 1;
-      }
-  }
+}

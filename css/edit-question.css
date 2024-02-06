@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-edit-question {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #273c75;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.row-edit-question {
+    margin-bottom: 20px;
+}
+
+.name_input-edit-question {
+    width: 30%;
+    text-align: left;
+    padding-right: 10px;
+    color: white !important;
+    font-weight: bold;
+}
+
+.form_input-edit-question {
+    width: 100%;
+}
+
+textarea,
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1da1f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+    .name_input-edit-question,
+    .form_input-edit-question {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+    }
+}

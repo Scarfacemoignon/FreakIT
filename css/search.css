@@ -1,0 +1,65 @@
+/* Styles communs pour les champs de formulaire */
+.input_search {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid  #273c75;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+    background-color: #273c75;
+    float: left;
+    border-right: 0px;
+    color: azure;
+    height: 50px;
+}
+
+/* Styles pour le bouton de recherche */
+.button_search {
+    background-color: #1da1f2;
+    color: #ffffff;
+    border: 2px solid #273c75;
+    border-left: 0px;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    float: left; /* Changement ici pour placer le bouton à gauche */
+    font-weight: bold !important;
+    height: 50px;
+}
+
+.button_search:hover {
+    opacity: 0.8;
+}
+::placeholder{
+    color: gainsboro;
+}
+
+/* Styles pour le conteneur du formulaire */
+.search-container {
+    overflow: hidden;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 45%; /* Largeur du conteneur */
+}
+
+/* Style de formulaire pour les petits écrans */
+@media screen and (max-width: 600px) {
+    .input_search {
+        width: 80%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .button_search {
+        width: 50%;
+        border-radius: 5px;
+        float: left; /* Pour centrer le bouton dans les petits écrans */
+        margin-left: 0; /* Réinitialiser la marge pour éviter l'espace */
+        height: 15px;
+        padding-top: 0;
+        font-size: 10px;
+    }
+
+}

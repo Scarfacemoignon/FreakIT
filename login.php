@@ -10,18 +10,18 @@
 <body>
 <br/><br/><br/><br/><br/>
     <div class="container">
-        <h1>Log In</h1>
+        <h1><img src="images/freakit.png" class ="freakit" alt="">Se connecter<img src="images/freakit.png" class ="freakit" alt=""></h1>
         <form method="POST">
 
             <?php 
                 if(isset($errorMsg)){
-                    echo "<p>".$errorMsg."<p>";
+                    echo "<p>".$errorMsg."</p>";
                  }
             ?>
 
             <div class="row">
                 <div class="name_input">
-                    <label for="pseudo">@Pseudo : </label>
+                    <label for="pseudo">Pseudo : </label>
                 </div>
                 <div class="form_input">
                     <input type="text"  name="pseudo" placeholder="@Pseudo">
@@ -38,13 +38,13 @@
 
                 <div class="form_input">
                     <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    <input type="checkbox" checked="checked" name="remember"> Se souvenir de moi
                     </label>
                 </div>
             <br/>
             <div class="row">
                 <button type="submit" class="button" name="validate">Login</button>
-                <p> I don't have an account  <a href="signup.php" style="color:dodgerblue;text-decoration:none;"> SignUp</a></p>
+                <p> Vous n'avez pas encore de compte <a href="signup.php" style="color:dodgerblue;text-decoration:none;"> S'inscrire</a></p>
             </div>
         </form>
     </div>    

@@ -1,0 +1,104 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container-administrateur {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* User Block Styles */
+.user-block {
+    background-color: #273c75;
+    border: 1px solid #ddd;
+    color:#fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+/* Category Block Styles */
+.category-block {
+    margin-top: 20px;
+}
+
+.label_admin {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input_det_admin,
+select,
+.button_det_admin {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.button_det_admin {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button_det_admin:hover {
+    background-color: #2980b9;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 3px solid #000;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    table {
+        overflow-x: auto;
+    }
+
+    th, td {
+        white-space: nowrap;
+    }
+}

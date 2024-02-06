@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require('php/database.php');
 
 //Validation du formulaire
@@ -6,11 +7,22 @@ if(isset($_POST['validate'])){
     //On verifie si le User a bien rempli le formulaire
     if(!empty($_POST['pseudo']) && !empty($_POST['pwd'])){
 
+        //les id de l'administrateur
+        $default_pseudo = "admin";
+        $default_pwd = "admin12345";
+    
        //Les donnees de l'utilisateur
         $user_pseudo = htmlspecialchars($_POST['pseudo']); 
         //on ne crypte pas le mot de passe
         $user_password = htmlspecialchars($_POST['pwd']);
 
+        //Si les identifiants renseignés correspondent aux identifiants de l'administrateur, on redirige vers la page d'administrateur
+        if($user_pseudo == $default_pseudo && $user_password == $default_pwd){
+            $_SESSION['pseudo'] = $user_pseudo;
+            header('Location: administrateur.php');
+        }else{
+            $errorMsg = "Pseudo ou mot de passe incorrect";
+        }
         //on verifie si l'utilisateur existe dans la base de donnee
         $checkIfUserExists = $db->prepare("SELECT * FROM users WHERE pseudo = ?");
         $checkIfUserExists->execute(array($user_pseudo));
@@ -34,7 +46,7 @@ if(isset($_POST['validate'])){
                 $_SESSION['signature'] = $userInfos['signature'];
                 
                 //On rediriger vers la page d'accueil si le user est authentifié
-                header('Location: index.php');
+                header('Location: profile.php?id='.$userInfos['id']);
 
             }else{
                 $errorMsg = "<p style='color:red;text-align:left;font-weight:bold;'>Password is not correct. </p>";

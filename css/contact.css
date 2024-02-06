@@ -1,0 +1,66 @@
+/* Les styles communs pour les champs de formulaire */
+input[type=text], textarea, input[type=email], input[type=number], select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid white !important;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 6px 0 16px; /* Ajusté la marge pour plus de cohérence */
+    resize: vertical;
+}
+
+/* Styles pour le bouton de soumission */
+input[type=submit] {
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+input[type=submit]:hover {
+    opacity: 0.7;
+}
+
+/* Styles pour le conteneur du formulaire */
+.container-form {
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #273c75;
+    padding: 20px; /* Ajusté la marge intérieure */
+    width: 100%;
+    max-width: 30%;
+    margin-left: 35%;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/* Styles pour le titre h1 */
+h1 {
+    color: white;
+    width: 100%;
+    text-align: center; /* Centré le texte */
+}
+
+.freakit {
+    width: 45px;
+    height: 44px;
+}
+
+/* Media Queries pour la responsivité */
+@media screen and (max-width: 768px) {
+    input[type=submit] {
+        margin-left: 0; /* Ajuster la marge à 0 sur les petits écrans */
+    }
+
+    .container-form {
+        margin-left: 10%; /* Ajuster la marge à 10% sur les petits écrans */
+        font-size: 11px;
+    }
+    .input[type=text], textarea, input[type=email], input[type=number]{
+        width: 100%;
+        
+    }
+}

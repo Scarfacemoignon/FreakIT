@@ -1,0 +1,46 @@
+/* Styles de base */
+.bottom {
+    background-color: #273c75;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    bottom: 0;
+
+}
+
+.bottom-a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.image-bottom {
+    width: 30px;
+    height: 30px;
+}
+.bottom-a-contact{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.bottom-a-contact:hover{
+    color: #1da1f2;
+}
+
+/* Media Queries pour la responsivité */
+@media screen and (max-width: 600px) {
+    .bottom {
+        flex-direction: column; /* Change la direction des éléments en colonne */
+        align-items: center; /* Centre les éléments horizontalement */
+    }
+
+    .bottom-a {
+        display: block; /* Affiche chaque lien sur une nouvelle ligne */
+        margin: 5px 0; /* Ajoute un espacement entre les liens */
+    }
+
+    .image-bottom {
+        margin-top: 10px; /* Ajoute un espacement entre les images */
+    }
+}

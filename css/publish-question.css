@@ -1,55 +1,74 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  input[type=text], select, textarea,b {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  button {
-    background-color:  green;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 10%;
-    float: right;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    opacity: 0.8;
-    background-color: rgb(13, 69, 13);
-  }
+  box-sizing: border-box;
+}
 
-  .container {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 10px;
-      width: 50%;
-    }
+input[type=text], select, textarea, b {
+  width: 100%;
+  padding: 12px;
+  background-color: #273c75;
+  border-radius: 4px;
+  resize: vertical;
+  border: 3px solid #fff;
+  color:#fff;
+}
+.select{
+  font-weight: bold !important;
+  font-size: 20px;
+}
 
-     /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .name_input, .form_input, button {
+label {
+  padding: 12px 0;
+  display: block;
+}
+
+.button-topic-send {
+  background-color: #1da1f2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button-topic-send:hover {
+  opacity: 0.8;
+}
+
+.container-topic {
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #273c75;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form_input{
+  color: #fff;
+}
+::placeholder{
+  color: #fff;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  input[type=text], select, textarea, b, button {
       width: 100%;
       margin-top: 0;
-    }
   }
+
+  label {
+      padding: 12px 0 6px 0;
+  }
+}

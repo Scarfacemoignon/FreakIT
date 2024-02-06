@@ -1,0 +1,53 @@
+.card-membre {
+    width: 20%; /* Ajustez la largeur de la carte selon vos besoins */
+    margin: 20px; /* Espace entre les cartes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    float: left;
+    text-align: center; /* Centrer le contenu */
+    overflow: hidden; /* Pour cacher les coins arrondis des images */
+    background-color: #273c75;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.card-membre:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+.membres-a{
+    text-decoration: none;
+    color: #2196F3;
+}
+.membres-a:hover{
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+.voir-profil {
+    padding: 10px; /* Ajoutez un peu d'espace autour du contenu */
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+    width: 100%; /* Pour assurer que l'image est pleine largeur à l'intérieur de la carte */
+    height: auto; /* Pour conserver les proportions de l'image */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px; /* Espace entre les cartes */
+}
+.role-p{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .card-membre {
+        width: 100%; /* Pour rendre les cartes pleine largeur sur les petits écrans */
+    }
+}
